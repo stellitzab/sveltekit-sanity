@@ -7,6 +7,9 @@
 </script>
 
 <div class="container">
+    <h1>
+        Speakers
+    </h1>
     {#each speakers as Speaker }
     <div class="card">
         <div class="image">
@@ -33,5 +36,11 @@
 
     img {
         border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-family: monospace;
+        text-align: center;
     }
 </style>
