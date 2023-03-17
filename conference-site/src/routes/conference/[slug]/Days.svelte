@@ -62,6 +62,7 @@
         justify-content: center;
         margin-left: 10px;
         margin-right: 10px;
+        max-width: 30vw;
     }
 
     .description {
