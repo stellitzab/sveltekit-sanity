@@ -2,6 +2,7 @@
 	import { each } from "svelte/internal";
 	import type { Day } from "../../../../lib/types";
 	import Speakers from "./Speakers.svelte";
+	import Talks from "./Talks.svelte";
 
     export let days: Day[];
 
@@ -29,6 +30,15 @@
     </h1>
     {#each days as Day }
     <Speakers speakers={Day.speakers} />
+    {/each}
+</div>
+
+<div class="container-3">
+    <h1>
+        Talks
+    </h1>
+    {#each days as Day }
+    <Talks talks={Day.talks} />
     {/each}
 </div>
 

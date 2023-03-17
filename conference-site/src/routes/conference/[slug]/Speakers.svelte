@@ -11,7 +11,7 @@
     {#each speakers as Speaker }
     <div class="card">
         <div class="image">
-            <img src={Speaker.imageUrl} alt="hot man" width="100" height="100">
+            <img src={Speaker.imageUrl} alt="hot man" width="150" height="150">
         </div>
         <div class="header">
            Name: {Speaker.name}
@@ -21,15 +21,30 @@
                  Speaker.title
             }
         </div>
-    
     </div>
-{/each}
+    {/each}
 </div>
 
 <style>
 
     div {
         font-family: monospace;
+    }
+
+    .card {
+        min-width: 30vw;
+        min-height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+
     }
 
     img {
