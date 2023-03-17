@@ -7,9 +7,7 @@
 </script>
 
 <div class="container">
-    <h1>
-        Speakers
-    </h1>
+
     {#each speakers as Speaker }
     <div class="card">
         <div class="image">

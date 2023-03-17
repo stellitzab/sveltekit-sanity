@@ -24,6 +24,9 @@
 </div>
 
 <div class="container-2">
+    <h1>
+        Speakers
+    </h1>
     {#each days as Day }
     <Speakers speakers={Day.speakers} />
     {/each}
@@ -71,5 +74,11 @@
         text-align: center;
         font-size: 1em;
         
+    }
+
+    h1 {
+        font-size: 3em;
+        font-family: monospace;
+        text-align: center;
     }
 </style>
